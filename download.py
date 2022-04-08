@@ -68,7 +68,7 @@ class Video():
 	def Download(self):
 		self.type	= inputf("[=] type for [V]ideo  [A]udio 	: ", "blue")
 		self.print_info()
-		if self.type == "audio":
+		if self.type == "A" or self.type == "A".lower():
 			self.download_audio()
 		self.download_video()
 		
