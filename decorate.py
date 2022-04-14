@@ -1,4 +1,4 @@
-from sys import exit()
+from sys import exit
 colors = {
 	"black"		:"\033[1;30m",
 	"red"		:"\033[1;31m",
