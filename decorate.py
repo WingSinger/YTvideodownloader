@@ -1,3 +1,4 @@
+from sys import exit()
 colors = {
 	"black"		:"\033[1;30m",
 	"red"		:"\033[1;31m",
@@ -22,6 +23,7 @@ def inputf(text, color):
 		text = colors[color] + text + "\033[0m"
 		colored_prompt = input(text)
 		return colored_prompt
+	except EOFError: exit()
 	except:
 		return input(text)
 		
